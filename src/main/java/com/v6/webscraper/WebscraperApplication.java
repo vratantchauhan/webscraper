@@ -30,6 +30,7 @@ public class WebscraperApplication {
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(WebscraperApplication.class, args);
 		Path currentWorkingDir = Paths.get("").toAbsolutePath();
+
 		String filePath = currentWorkingDir+"src/main/resources/AllMedicalRecords.txt";
 		System.out.println(currentWorkingDir.normalize().toString());
 		try {
